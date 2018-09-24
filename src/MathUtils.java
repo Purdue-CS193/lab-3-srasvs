@@ -16,7 +16,9 @@ public class MathUtils {
      */
     public static double raiseToPower(int base, int exp) {
         /* Set initial result to be just the number */
-        int res = base;
+        int res = 1;
+
+
 
         /* Determine if the exponent is negative */
         boolean isNegative = false;
@@ -29,7 +31,7 @@ public class MathUtils {
             Ex: base = 2, exp = 2
                --> res = 2, then res = 4 */
         for (int i = 0; i < exp; i++) {
-           res *= base; 
+           res *= base;
         }
 
         /* If it's a negative exponent, we should invert it! */
